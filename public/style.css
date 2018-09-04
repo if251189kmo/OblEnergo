@@ -1,0 +1,104 @@
+.wrapper {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(235, 240, 243);
+}
+
+.download {
+    color: azure;
+    font: 1em sans-serif;
+    margin: 30px;
+    border-radius: 10px;
+    background-color: rgba(96, 212, 96, 0.856);
+    border: 2px solid rgba(96, 212, 96, 0.856);
+    padding: 5px;    
+}
+
+.download, .edit, .inp {
+    outline: none;
+}
+
+.download:hover{
+    background-color:  rgb(66, 124, 66);
+    border: 2px solid rgb(118, 192, 118);   
+}
+
+.title, .informUser, .informUserInputs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;      
+}
+
+.title > div{
+    flex-basis: 28%;   
+}
+
+.title {
+    background-color: rgba(131, 219, 123, 0.781);
+    margin: 0 30px;
+    padding: 15px 10px;
+    font: 1.5em sans-serif;
+    font-weight: bold;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);     
+}
+
+.title > .Operation, .informUser > .edAndDel {
+    flex-basis: 15%;
+    text-align: center;
+}
+
+.informUser > div {
+    flex-basis: 28%;
+    align-self:center;    
+}
+
+.inp {
+    border-radius: 10px;
+    padding: 5px;    
+}
+
+.informUser {    
+    padding: 20px 10px 20px 10px;   
+    margin: 0 30px;    
+    border-bottom: 1px solid rgb(102, 109, 108);
+    font: 1.1em sans-serif;
+    border-radius: 10px;
+    
+    -webkit-box-shadow: 0 6px 4px -4px black;
+    -moz-box-shadow: 0 6px 4px -4px black;
+    box-shadow: 0 10px 5px -4px rgba(0, 0, 0, 0.219);
+}
+
+.name {
+    color:  rgb(66, 124, 66); 
+}
+
+.edit, .save {
+    border-radius: 10px;        
+}
+
+.edit, .save {
+    color: azure;
+    font: 0.9em sans-serif;
+    background-color: rgba(96, 212, 96, 0.856);
+    border: 2px solid rgba(96, 212, 96, 0.856);
+    padding: 5px;
+}
+
+.edit:hover, .save:hover {
+    background-color:  rgb(66, 124, 66);
+    border: 2px solid rgb(118, 192, 118); 
+}
+
+.informUserContainer .informUserInputs {
+    display: none;
+}
+
+.informUserContainer.editMode .informUserInputs {
+    display: flex;
+}
+
+.informUserContainer.editMode .informUserText{
+    display: none;
+}
